@@ -2,5 +2,11 @@
   "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
   "hostRequirements": {
     "memsz": "2gb"
-  }
+  },
+  "features": {
+    "ghcr.io/devcontainers/features/sshd:1": {
+      "version": "latest"
+    }
+  },
+  "postCreateCommand": "sudo service ssh start"
 }
